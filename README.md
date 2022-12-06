@@ -1,3 +1,3 @@
-#Mern Stack Admin Dashboard
+# Mern Stack Admin Dashboard
 
 > By Adewale David 
