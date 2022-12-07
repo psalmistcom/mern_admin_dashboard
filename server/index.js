@@ -10,9 +10,6 @@ import generalRoutes from './routes/general.js'
 import managementRoutes from './routes/management.js'
 import salesRoutes from './routes/sales.js'
 
-// MONGO_URL = 'mongodb+srv://adminuser:w7f1g2GISIC8UVzf@admindashboard.dfvnv4l.mongodb.net/?retryWrites=true&w=majority'
-// PORT = 5001
-
 // CONFIG
 dotenv.config();
 const app = express()
