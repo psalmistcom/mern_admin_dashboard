@@ -8,10 +8,14 @@ import { useGetGeographyQuery } from "state/api";
 
 
 const Geography = () => {
+    const theme = useTheme()
+    const { data, isLoading } = useGetGeographyQuery()
+    console.log("Data", data)
+
     return (
-        <div>
-            Geography
-        </div>
+        <Box m="1.5rem 2rem">
+            <Header title="GEOGRAPHY" subtitle="Map of the Geography" />
+        </Box>
     )
 }
 
