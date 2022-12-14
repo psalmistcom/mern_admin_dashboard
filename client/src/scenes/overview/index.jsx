@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import {
     Box,
-    useTheme,
     FormControl,
     MenuItem,
     InputLabel,
@@ -9,10 +8,8 @@ import {
 } from "@mui/material";
 import OverviewChart from "components/OverviewChart"
 import Header from "components/Header";
-import { useGetSalesQuery } from "state/api";
 
 const Sales = () => {
-    const theme = useTheme()
     const [view, setView] = useState("units")
 
     return (
