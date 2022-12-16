@@ -8,12 +8,18 @@ const Overview = () => {
 
     return (
         <Box m="1.5rem 2.5rem">
-            <Header title="Sales Overview" subtitle="List of general Sales overview" />
-
+            <Header
+                title="OVERVIEW"
+                subtitle="Overview of general revenue and profit"
+            />
             <Box height="75vh">
-                <FormControl sx={{ mt: "1rem" }} >
+                <FormControl sx={{ mt: "1rem" }}>
                     <InputLabel>View</InputLabel>
-                    <Select value={view} label="View" onChange={(e) => setView(e.target.value)}>
+                    <Select
+                        value={view}
+                        label="View"
+                        onChange={(e) => setView(e.target.value)}
+                    >
                         <MenuItem value="sales">Sales</MenuItem>
                         <MenuItem value="units">Units</MenuItem>
                     </Select>
@@ -21,7 +27,7 @@ const Overview = () => {
                 <OverviewChart view={view} />
             </Box>
         </Box>
-    )
-}
+    );
+};
 
-export default Overview
+export default Overview;

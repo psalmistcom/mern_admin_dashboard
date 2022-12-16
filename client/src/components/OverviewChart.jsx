@@ -6,8 +6,6 @@ import { useGetSalesQuery } from "state/api";
 const OverviewChart = ({ isDashboard = false, view }) => {
     const theme = useTheme();
     const { data, isLoading } = useGetSalesQuery();
-    console.log("data", data)
-
 
     const [totalSalesLine, totalUnitsLine] = useMemo(() => {
         if (!data) return [];
@@ -44,7 +42,7 @@ const OverviewChart = ({ isDashboard = false, view }) => {
         );
 
         return [[totalSalesLine], [totalUnitsLine]];
-    }, [data]);
+    }, [data]); // eslint-disable-line react-hooks/exhaustive-deps
 
     if (!data || isLoading) return "Loading...";
 
@@ -162,7 +160,7 @@ const OverviewChart = ({ isDashboard = false, view }) => {
                     : undefined
             }
         />
-    )
-}
+    );
+};
 
-export default OverviewChart
+export default OverviewChart;
