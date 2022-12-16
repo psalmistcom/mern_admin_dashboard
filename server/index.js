@@ -53,9 +53,9 @@ mongoose.connect(process.env.MONGO_URL, {
     app.listen(PORT, () => console.log(`SERVER RUNNING ON port ${PORT}`));
 
     // Add data ones
-    AffiliateStat.insertMany(dataAffiliateStat);
+    // AffiliateStat.insertMany(dataAffiliateStat);
     // OverallStat.insertMany(dataOverallStat)
-    // Product.insertMany(dataProduct)
+    Product.insertMany(dataProduct) 
     // ProductStat.insertMany(dataProductStat)
     // User.insertMany(dataUser) 
     // Transaction.insertMany(dataTransaction) 
